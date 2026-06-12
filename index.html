@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button onclick="changeText()">Click Me</button>
+    <button onclick="toggleTheme()">Toggle Theme</button>
+
+    <p id="text">Hello, I am your portfolio</p>
+
+    <button class="theme-btn" onclick="toggleTheme()">Toggle Theme</button>
+
+    <header id="home">
+        <h1>Hi, I'm Rinita Ganguly</h1>
+        <p>Aspiring Web Developer</p>
+
+        <button onclick="document.getElementById('projects').scrollIntoView()">
+            View Projects
+        </button>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am learning web development and building cool projects.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="card">Project 1</div>
+        <div class="card">Project 2</div>
+    </section>
+
+    <section id="dashboard">
+        <h2>Dashboard</h2>
+
+        <div class="card">
+            <h3>Projects Completed</h3>
+            <h1 id="counter">0</h1>
+        </div>
+
+        <div class="card">Learning HTML, CSS, JS</div>
+        <div class="card">Goal: Become Developer</div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
